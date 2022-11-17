@@ -1,0 +1,22 @@
+<p>Angular Chart.js Bar Sample</p>
+
+<div
+  style="
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <div style="width: 98%; padding-top: 36px">
+    <canvas
+      baseChart
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [plugins]="barChartPlugins"
+      [type]="barChartType"
+      (chartHover)="chartHovered($event)"
+    >
+    </canvas>
+  </div>
+</div>
